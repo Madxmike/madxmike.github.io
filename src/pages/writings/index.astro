@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import WritingTitle from '../../components/WritingTitle.astro'
+
+const allWritings = await getCollection('writings')
+---
+
+<BaseLayout>
+    <ul class="flex flex-col gap-4">
+        {
+            allWritings.map((writing) => (
+                <li class="border-slate-100 pb-4 [&:not(:last-child)]:border-b-[1.5px]">
+                    <WritingTitle writing={writing} />
+                </li>
+            ))
+        }
+    </ul>
+</BaseLayout>

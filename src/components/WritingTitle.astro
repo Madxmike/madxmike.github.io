@@ -1,0 +1,19 @@
+---
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'America/New_York',
+})
+
+const { writing } = Astro.props
+---
+
+<a href={`/writings/${writing.slug}`} class="flex flex-col gap-2">
+    <span class="font-title text-xl font-bold">
+        {writing.data.title}
+    </span>
+    <small class="text-primary text-base text-opacity-30 dark:text-opacity-60">
+        {dateFormatter.format(writing.data.published)}
+    </small>
+</a>
