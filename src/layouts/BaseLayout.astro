@@ -8,11 +8,28 @@ const currentPath = pathname.split('/')[1]
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" id="favicon" type="image/webp" href="/favicon_light.webp" />
+
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="alternate" type="application/rss+xml" title="Michael Epps's Blog" href={`${Astro.site}rss.xml`} />
         <title>Astro</title>
+        <script is:inline>
+            function switchFavicon(isDarkMode) {
+                const faviconLink = document.getElementById('favicon')
+                faviconLink.href = isDarkMode ? '/favicon_dark.webp' : '/favicon_light.webp'
+                console.log('gwergw')
+            }
+
+            // Check the user's dark mode preference and switch the favicon accordingly
+            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+            switchFavicon(prefersDarkMode)
+
+            // Listen for changes in the user's dark mode preference
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+                switchFavicon(event.matches)
+            })
+        </script>
     </head>
     <body
         class="m-4 flex min-h-[95vh] flex-col items-center justify-between gap-8 bg-background text-primary desktop:mt-24 desktop:min-h-[90vh]"
