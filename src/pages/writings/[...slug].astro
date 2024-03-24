@@ -16,6 +16,10 @@ const { Content } = await entry.render()
 ---
 
 <BaseLayout title={entry.data.title}>
-    <WritingTitle writing={entry} />
-    <Content />
+    <span class="flex flex-col gap-4">
+        <WritingTitle writing={entry} />
+        <span class="flex flex-col gap-4">
+            <Content />
+        </span>
+    </span>
 </BaseLayout>
