@@ -5,3 +5,9 @@ description: Learn how to draw a cute owl step-by-step
 ---
 
 Here is where i draw the owl!!!
+
+```go
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
