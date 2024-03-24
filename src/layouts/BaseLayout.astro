@@ -19,7 +19,9 @@ import '@fontsource/source-sans-pro'
     <body
         class="text-primary desktop:justify-center desktop:mt-24 m-4 flex bg-background"
     >
-        <div class="desktop:flex-row desktop:w-desktop flex flex-col gap-8">
+        <div
+            class="desktop:flex-row desktop:w-desktop flex w-full flex-col gap-8"
+        >
             <nav class="flex flex-col gap-2">
                 <h1
                     class="tracking-wi font-title float-end flex text-2xl font-bold"
@@ -33,7 +35,7 @@ import '@fontsource/source-sans-pro'
                     </li>
                 </ul>
             </nav>
-            <div class="desktop:w-2/3">
+            <div class="desktop:w-2/3 w-full">
                 <slot />
             </div>
         </div>
