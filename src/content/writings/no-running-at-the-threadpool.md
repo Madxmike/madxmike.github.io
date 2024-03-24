@@ -1,6 +1,7 @@
 ---
 title: No Running At The ThreadPool
-published: 2023-01-02
+pubDate: 2023-01-24
+description: Discussing the risks of directly running tasks on the thread pool
 ---
 
 "WHISTLE!" - Roy Kent

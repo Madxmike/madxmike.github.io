@@ -1,6 +1,7 @@
 ---
 title: Debug The Bugs
-published: 2023-01-24
+pubDate: 2023-01-24
+description: Here are some debugging tips to help fix bugs
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam non quam lacus suspendisse. Quam viverra orci sagittis eu volutpat odio. Consectetur libero id faucibus nisl. Adipiscing enim eu turpis egestas pretium. Pellentesque habitant morbi tristique senectus et netus. Iaculis eu non diam phasellus vestibulum. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Tortor at auctor urna nunc. Diam quis enim lobortis scelerisque. Tristique nulla aliquet enim tortor at auctor. Urna duis convallis convallis tellus id interdum velit. Id diam vel quam elementum pulvinar. Lectus magna fringilla urna porttitor rhoncus dolor purus non. Imperdiet massa tincidunt nunc pulvinar sapien et. Non blandit massa enim nec dui nunc mattis.
