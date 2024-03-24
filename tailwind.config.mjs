@@ -13,6 +13,12 @@ export default {
                 primary: 'rgb(var(--color-primary) / <alpha-value>)',
                 accent: 'rgb(var(--color-accent) / <alpha-value>)',
             },
+            screens: {
+                desktop: '960px',
+            },
+            width: {
+                desktop: '960px',
+            },
         },
     },
     plugins: [],
