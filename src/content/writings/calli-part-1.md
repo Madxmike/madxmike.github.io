@@ -1,7 +1,7 @@
 ---
 title: Calli
 pubDate: 2024-03-24
-description: Here are some debugging tips to help fix bugs
+description: A tale of whiteboarding, handwriting, and solving minor issues with 6 month projects
 ---
 
 This is the first article in a (hopefully!) series of articles on a new app I'm calling Calli.
