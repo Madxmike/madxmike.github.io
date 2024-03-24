@@ -18,8 +18,7 @@ Being bad at handwriting for a person in 2024, especially one that types for a l
 
 Being a fan of [Deliberate Practice](https://a.co/d/9wDZkgV), I decided to try to give a real honest shot at improving my handwriting. Since I was primarily writing using digital pens on digital whiteboards, I felt that the most useful course of action would be to write digitally. This presented some problems though as _every_ _single_ worksheet or course or whatever else for handwriting is designed to be done with real pen and paper. Google was no help as I could not find an app that could help me write better digitally, so I resorted to copy-pasting exercise sheets and notebook paper svgs into paint and then drawing on top of those.
 
-![Picture of my terrible handwriting.](handwriting.png)
-
+<Image src="/handwriting.png" alt="A photo of some handwriting exercises I did by copy-pasting paper textures into paint and drawing on top"/>
 <center>Specimen of my terrible handwriting!</center>
 
 Like all good software engineers with trivial problems, I got tired of this workflow quickly and wondered if I could automate this somehow. I started to wonder if I could make some program that would not just place some text on the screen for me to trace but to grade how well I did and coach me on how to do better.
@@ -36,7 +35,7 @@ So, now I am writing an app that will do exactly that! I wanted to keep the scop
 
 And here is some of that in action!
 
-<video controls src="/src/content/writings/calli_first_demo.mp4" title="Video of first working pieces of Calli"></video>
+<video controls src="/calli_first_demo.mp4" title="Video of first working pieces of Calli"></video>
 
 As you can see, the app displays the text to be written and records the user's strokes. It then grades each character for accuracy of shape. I am using 3 canvases (canvi???) here: the first stores the image data that we compare the strokes to, the second displays the outline of the text for tracing, and the third is what the player draws on.
 
