@@ -27,7 +27,14 @@ const currentPath = pathname.split('/')[1]
                             ['Writings', '/writings'],
                         ].map(([label, path]) => (
                             <li>
-                                <a href={path} class={currentPath === path.slice(1) ? 'text-accent' : ''}>
+                                <a
+                                    href={path}
+                                    class={
+                                        currentPath === path.slice(1)
+                                            ? 'text-accent hover:text-opacity-85'
+                                            : 'hover:text-primary hover:text-opacity-85'
+                                    }
+                                >
                                     {label}
                                 </a>
                             </li>
