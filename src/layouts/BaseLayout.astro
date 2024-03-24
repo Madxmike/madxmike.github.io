@@ -14,7 +14,9 @@ const currentPath = pathname.split('/')[1]
         <link rel="alternate" type="application/rss+xml" title="Michael Epps's Blog" href={`${Astro.site}rss.xml`} />
         <title>Astro</title>
     </head>
-    <body class="m-4 flex bg-background text-primary desktop:mt-24 desktop:justify-center">
+    <body
+        class="m-4 flex min-h-[95vh] flex-col items-center justify-between gap-8 bg-background text-primary desktop:mt-24 desktop:min-h-[90vh]"
+    >
         <div class="flex w-full flex-col gap-8 desktop:w-desktop desktop:flex-row">
             <nav class="flex flex-col gap-2">
                 <h1 class="tracking-wi font-title float-end flex text-2xl font-bold">
@@ -42,11 +44,11 @@ const currentPath = pathname.split('/')[1]
                     }
                 </ul>
             </nav>
-            <div class="w-full desktop:w-2/3">
+            <main class="w-full desktop:w-2/3">
                 <slot />
-            </div>
+            </main>
         </div>
-        <footer class="fixed bottom-2 w-full text-sm">
+        <footer class="w-full text-sm">
             <p class="text-center text-primary">Copyright &copy; 2024 Michael Epps</p>
         </footer>
     </body>
