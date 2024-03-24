@@ -6,7 +6,7 @@ import WritingTitle from '../../components/WritingTitle.astro'
 const allWritings = await getCollection('writings')
 ---
 
-<BaseLayout>
+<BaseLayout title="Writings">
     <ul class="flex flex-col gap-4">
         {
             allWritings.map((writing) => (

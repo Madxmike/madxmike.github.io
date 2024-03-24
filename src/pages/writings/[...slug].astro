@@ -15,7 +15,7 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<BaseLayout>
+<BaseLayout title={entry.data.title}>
     <WritingTitle writing={entry} />
     <Content />
 </BaseLayout>

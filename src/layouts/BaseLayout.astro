@@ -3,6 +3,8 @@ import '@fontsource/source-sans-pro'
 
 const pathname = new URL(Astro.request.url).pathname
 const currentPath = pathname.split('/')[1]
+
+const { title } = Astro.props
 ---
 
 <html lang="en">
@@ -13,12 +15,11 @@ const currentPath = pathname.split('/')[1]
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="alternate" type="application/rss+xml" title="Michael Epps's Blog" href={`${Astro.site}rss.xml`} />
-        <title>Astro</title>
+        <title>{title}</title>
         <script is:inline>
             function switchFavicon(isDarkMode) {
                 const faviconLink = document.getElementById('favicon')
                 faviconLink.href = isDarkMode ? '/favicon_dark.webp' : '/favicon_light.webp'
-                console.log('gwergw')
             }
 
             // Check the user's dark mode preference and switch the favicon accordingly
