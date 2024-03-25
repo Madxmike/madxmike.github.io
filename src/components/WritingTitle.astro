@@ -9,7 +9,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 const { writing } = Astro.props
 ---
 
-<a href={`/writings/${writing.slug}`} class="group flex flex-col gap-2">
+<a href={`/writings/${writing.slug}`} class="group flex flex-col gap-2" data-astro-prefetch>
     <span class="font-title text-2xl font-bold group-hover:text-primary group-hover:text-opacity-85">
         {writing.data.title}
     </span>
