@@ -1,8 +1,26 @@
 ---
+import { getCollection } from 'astro:content'
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout
     title="About"
-    description="I'm a developer living in Atlanta, GA. Currently working @ Prime Video. These are my writings about Software, Life, and everything else."
-/>
+    description="Michael Epps\'s Blog. This blog is a place where I'm recording some thoughts, projects, and other musings I have. Topics can be anything, but I\'m mostly focused on Software Engineering and sorrounding topics at the moment."
+>
+    <article class="text-lg">
+        <h1 class="text-2xl font-bold">Hello 👋, I'm Michael</h1>
+        <br />
+        <p>
+            I'm a self proclaimed pretty cool guy living in Atlanta, GA. Im currently a software engineer @ <a
+                href="https://www.primevideo.com">Prime Video</a
+            >
+            doing all sorts of payments related things!
+        </p>
+        <br />
+
+        <p>
+            This blog is a place where I'm recording some thoughts, projects, and other musings I have. Topics can be
+            anything, but I'm mostly focused on Software Engineering and sorrounding topics at the moment.
+        </p>
+    </article>
+</BaseLayout>
