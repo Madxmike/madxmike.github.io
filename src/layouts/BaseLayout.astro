@@ -17,6 +17,10 @@ const { title, description } = Astro.props
         <link rel="alternate" type="application/rss+xml" title="Michael Epps's Blog" href={`${Astro.site}rss.xml`} />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <script
+            defer
+            src="https://analytics.us.umami.is/script.js"
+            data-website-id="f8f25d3a-bc7b-4c7e-8b4a-a9a5a2c164c9"></script>
         <script is:inline>
             function switchFavicon(isDarkMode) {
                 const faviconLink = document.getElementById('favicon')
