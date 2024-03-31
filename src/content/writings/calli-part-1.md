@@ -1,6 +1,6 @@
 ---
-title: Calli,
-pubDate: 2024-03-24,
+title: Calli
+pubDate: 2024-03-24
 description: A tale of whiteboarding, handwriting, and solving minor issues with 6 month projects
 ---
 
