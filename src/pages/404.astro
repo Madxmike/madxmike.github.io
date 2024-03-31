@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets'
+import TearBoi from '../assets/404.png'
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
@@ -6,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     <span class="flex flex-col items-center justify-center gap-8">
         <h1 class="text-center text-3xl font-bold">404 Not Found</h1>
         <a href="https://www.youtube.com/watch?v=pwzboBhj1UQ">
-            <img src="/404.png" alt='"Tear Boi" by Jacob Davis' width="256px" height="256px" />
+            <Image src={TearBoi} alt='"Tear Boi" by Jacob Davis' />
         </a>
         <small>"Tear Boi" by Jacob Davis</small>
     </span>
