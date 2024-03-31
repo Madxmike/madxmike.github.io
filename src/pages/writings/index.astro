@@ -9,11 +9,14 @@ const allWritings = await getCollection('writings')
 <BaseLayout title="Writings">
     <ul class="flex flex-col gap-4">
         {
-            allWritings.map((writing) => (
-                <li class="border-slate-100 pb-4  [&:not(:last-child)]:border-b-[1.5px]">
-                    <WritingTitle writing={writing} />
-                </li>
-            ))
+            allWritings
+                .sort((a, b) => new Date(a.data.pubDate!!).getTime() - new Date(b.data.pubDate!!).getTime())
+                .reverse()
+                .map((writing) => (
+                    <li class="border-slate-100 pb-4  [&:not(:last-child)]:border-b-[1.5px]">
+                        <WritingTitle writing={writing} />
+                    </li>
+                ))
         }
     </ul>
 </BaseLayout>
