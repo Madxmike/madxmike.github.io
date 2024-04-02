@@ -36,7 +36,7 @@ So, now I am writing an app that will do exactly that! I wanted to keep the scop
 
 And here is some of that in action!
 
-<video controls src="/public/calli_first_demo.mp4" title="Video of first working pieces of Calli"></video>
+<video controls src="/calli_first_demo.mp4" title="Video of first working pieces of Calli"></video>
 
 As you can see, the app displays the text to be written and records the user's strokes. It then grades each character for accuracy of shape. I am using 3 canvases (canvi???) here: the first stores the image data that we compare the strokes to, the second displays the outline of the text for tracing, and the third is what the player draws on.
 
