@@ -7,6 +7,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
+                serif: ['"Source Serif 4 Variable"', ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 background: 'rgb(var(--color-background) / <alpha-value>)',
