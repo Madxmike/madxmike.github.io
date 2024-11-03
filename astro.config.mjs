@@ -8,4 +8,5 @@ export default defineConfig({
     site: 'https://blog.michaelepps.me',
     plugins: [],
     integrations: [tailwind()],
+    prefetch: true,
 })
