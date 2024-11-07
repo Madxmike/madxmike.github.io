@@ -7,7 +7,7 @@ import WordOfMikCallout from '../components/callouts/WordOfMikCallout.astro'
 const { title, description } = Astro.props
 ---
 
-<html lang="en">
+<html lang="en" class="h-full">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" id="favicon" type="image/webp" href="/favicon_light.webp" />
@@ -38,15 +38,15 @@ const { title, description } = Astro.props
         </script>
     </head>
     <body
-        class="m-4 flex min-h-[95vh] flex-col items-center justify-between gap-8 bg-background text-primary desktop:mt-24 desktop:min-h-[90vh]"
+        class="p-2 min-h-full flex flex-col items-center justify-between gap-8 bg-background text-primary"
     >
-        <div class="flex w-full flex-col gap-8 desktop:w-desktop desktop:flex-row">
-            <Navigation class="flex h-fit flex-col gap-2 desktop:sticky desktop:top-24"/>
-            <main class="w-full desktop:w-[70%]">
+        <div class="flex w-full flex-col gap-8 desktop:w-desktop desktop:flex-row pt-24">
+            <Navigation class="flex h-fit flex-col gap-2"/>
+            <main class="w-full desktop:w-[70%] h-fit">
                 <slot />
             </main>
         </div>
-        <footer class="w-full text-sm">
+        <footer class="w-full h-auto text-sm">
             <p class="text-center text-primary ">Copyright &copy; 2024 Michael Epps</p>
         </footer>
     </body>
