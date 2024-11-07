@@ -1,19 +1,12 @@
 ---
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'America/New_York',
-})
-
 const { writing } = Astro.props
 ---
 
-<a href={`/writings/${writing.slug}`} class="group flex flex-col gap-2" data-astro-prefetch>
-    <span class="font-title text-2xl font-bold group-hover:text-primary group-hover:text-opacity-85">
-        {writing.data.title}
-    </span>
-    <time class="text-base text-primary text-opacity-30 dark:text-opacity-60" datetime={writing.data.pubDate}>
-        {dateFormatter.format(writing.data.pubDate)}
-    </time>
-</a>
+<article class="flex flex-col gap-2">
+    <h2 class="text-2xl font-bold hover:text-accent">
+        <a href={`/writings/${writing.slug}`} data-astro-prefetch>
+            {writing.data.title}
+        </a>
+    </h2>
+    <p class="article-description text-primary text-opacity-60">{writing.data.description}</p>
+</article>

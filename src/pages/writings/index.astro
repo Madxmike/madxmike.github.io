@@ -4,14 +4,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import WritingTitle from '../../components/WritingTitle.astro'
 
 const allWritings = await getCollection('writings')
+const sortedWritings = allWritings
+                        .sort((a, b) => new Date(a.data.pubDate!!).getTime() - new Date(b.data.pubDate!!).getTime())
+                        .reverse()
 ---
 
 <BaseLayout title="Writings">
     <ul class="flex flex-col gap-4">
         {
-            allWritings
-                .sort((a, b) => new Date(a.data.pubDate!!).getTime() - new Date(b.data.pubDate!!).getTime())
-                .reverse()
+            sortedWritings
                 .map((writing) => (
                     <li class="border-slate-100 pb-4  [&:not(:last-child)]:border-b-[1.5px]">
                         <WritingTitle writing={writing} />
