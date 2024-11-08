@@ -1,0 +1,9 @@
+---
+
+const {word, phonetic, definition} = Astro.props;
+---
+<section class="definition not-prose flex flex-col gap-2 border-[1.5px] border-dashed border-accent px-4 pb-4 pt-0">
+    <h3 class="bg-background !mt-[-2.5%] px-2 w-fit text-accent">{word}</h3>
+    <p class="phonetic text-primary text-opacity-60">{phonetic}</p>
+    <p class="definition text-primary">1. {definition}</p>
+</section>
