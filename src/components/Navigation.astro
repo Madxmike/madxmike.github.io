@@ -19,7 +19,7 @@ const isCurrentPathLink = (path: string) => {
                 ['Writings', '/writings'],
             ].map(([label, path]) => (
                 <li class:list={[
-                    'w-full border-r-2 pb-2',
+                    'w-full border-b-2 desktop:border-b-0 desktop:border-r-2 pb-2',
                     {
                         'border-accent': isCurrentPathLink(path),
                     }
